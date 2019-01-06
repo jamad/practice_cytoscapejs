@@ -43,9 +43,16 @@
             },
             {
             "data": {
+            "id": "fe",
+                    "source": "f",
+                    "target": "e"
+            }
+            },
+            {
+            "data": {
             "id": "ac",
                     "source": "a",
-                    "target": "d"
+                    "target": "c"
             }
             },
             {

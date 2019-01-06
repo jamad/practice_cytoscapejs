@@ -11,6 +11,7 @@
         position: absolute;
         top: 0px;
         left: 0px;
+        background-color: black;
     }
 </style>
 
@@ -27,22 +28,30 @@
                     {
                         selector: 'node',
                         style: {
-                            'label': 'data(label)',
-                            'width': '60px',
-                            'height': '60px',
-                            'color': 'blue',
-                            'background-fit': 'contain',
-                            'background-clip': 'none'
-                        }
+                        'background-color': 'darkorange',
+                        'label': 'data(label)',
+                        'width': 60,
+                        'height': 60,
+                        'shape': 'circle',
+                        'color': 'white',
+                        'font-size': 16,
+                        'font-weight': 40,
+                        'text-halign': 'center',
+                        'text-valign': 'center',
+                    }
                     }, {
                         selector: 'edge',
                         style: {
-                           'text-background-color': 'yellow',
-                            'text-background-opacity': 0.4,
-                            'width': '6px',
-                            'target-arrow-shape': 'triangle',
-                            'control-point-step-size': '140px'
-                        }
+                        'content': 'data(id)',
+                        'width': 5,
+                        'opacity': 0.5,
+                        'color': 'white',
+                        'font-size': 24,
+                        'line-color': 'darkorange',
+                        'target-arrow-color': 'orange',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',// essential for directed graph
+                    }
                     }
                 ],
                 layout: {
